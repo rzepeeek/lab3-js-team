@@ -17,4 +17,6 @@ const tablica = [
 ]
 console.log(tablica);
 console.table(tablica);
-alert(tablica[0]);
+
+const nowaDlugosc = tablica.unshift('nowy12', 'nowy13');
+console.log(nowaDlugosc);
