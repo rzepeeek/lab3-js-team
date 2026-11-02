@@ -28,7 +28,11 @@ function startQuiz() {
         }
     }
 
-    alert(`Quiz zakończony! Twój wynik: ${score} / ${questions.length}`);
+    const wynikElement = document.getElementById('wynik') || document.getElementById('quiz-status');
+
+    if (wynikElement) {
+        wynikElement.textContent = `Wynik: ${score} / ${questions.length}`;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
