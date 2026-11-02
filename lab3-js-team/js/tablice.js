@@ -23,9 +23,14 @@ console.log(nowaDlugosc);
 
 const nowaTablica = ['Ford', 'Toyota', 'BMW', 'Renault'];
 
-document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
-document.write('<p>Ostatni element to <strong>' + nowaTablica[nowaTablica.length - 1] + </strong></p>');
+document.write('<p>Pierwszy element to ' + nowaTablica[0] + '</p>');
+document.write('<p>Ostatni element to ' + nowaTablica[nowaTablica.length - 1] + '</p>');
 
 nowaTablica.unshift('Porsche');
-document.write('<p>Nowy pierwszy element element to <strong>' + nowaTablica[0] + '</strong<</p>');
+document.write('<p>Nowy pierwszy element element to ' + nowaTablica[0] + '</p>');
+
+const usunietyOstatni = nowaTablica.pop();
+const usunietyPierwszy = nowaTablica.shift();
+document.write('<p>Usunieto z konca: ' + usunietyOstatni + ', a z poczatku: ' + usunietyPierwszy + '</p>);
+document.write('<p>W tablicy zostalo: ' + nowaTablica.join(', ') + '</p>');
 
