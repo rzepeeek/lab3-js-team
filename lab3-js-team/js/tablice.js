@@ -20,3 +20,12 @@ console.table(tablica);
 
 const nowaDlugosc = tablica.unshift('nowy12', 'nowy13');
 console.log(nowaDlugosc);
+
+const nowaTablica = ['Ford', 'Toyota', 'BMW', 'Renault'];
+
+document.write('<p>Pierwszy element to <strong>' + nowaTablica[0] + '</strong></p>');
+document.write('<p>Ostatni element to <strong>' + nowaTablica[nowaTablica.length - 1] + </strong></p>');
+
+nowaTablica.unshift('Porsche');
+document.write('<p>Nowy pierwszy element element to <strong>' + nowaTablica[0] + '</strong<</p>');
+
