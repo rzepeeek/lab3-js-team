@@ -34,3 +34,12 @@ const usunietyPierwszy = nowaTablica.shift();
 document.write('<p>Usunieto z konca: ' + usunietyOstatni + ', a z poczatku: ' + usunietyPierwszy + '</p>);
 document.write('<p>W tablicy zostalo: ' + nowaTablica.join(', ') + '</p>');
 
+const oceny = [
+	['JavaScript', 5],
+	['Git', 4],
+	['HTML', 5]
+];
+console.log(oceny[1]);
+console.log(oceny[1][0]);
+console.log(oceny[1][1]);
+document.write('<p>Przedmiot: ' + oceny[1][0] + ', ocena: ' + oceny[1][1] + '</p>');
