@@ -21,3 +21,26 @@ if (licznikElement) {
         </ul>
     `;
 }
+
+const naglowekDom = document.querySelector('#dom h3');
+
+if (naglowekDom) {
+    naglowekDom.textContent = 'Zadanie 4 – Manipulacja DOM (Zmieniono)';
+    naglowekDom.classList.add('text-success');
+}
+const lista = document.getElementById('lista');
+if (lista) {
+    lista.innerHTML = '';
+
+    const liFormy = document.createElement('li');
+    liFormy.textContent = `Liczba formularzy na stronie: ${formy}`;
+    lista.appendChild(liFormy);
+
+    const liObrazki = document.createElement('li');
+    liObrazki.textContent = `Liczba obrazków na stronie: ${obrazki}`;
+    lista.appendChild(liObrazki);
+
+    const liOdnosniki = document.createElement('li');
+    liOdnosniki.textContent = `Liczba odnośników na stronie: ${odnosniki}`;
+    lista.appendChild(liOdnosniki);
+}
